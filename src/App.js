@@ -1,6 +1,8 @@
 import { Center, Container, Heading, VStack } from '@chakra-ui/layout';
 import React from 'react';
 import Navbar from './components/Navbar';
+import Timeline from './components/Timeline';
+import mockEvents from './utils/mock_data.json';
 
 function App() {
   return (
@@ -10,9 +12,9 @@ function App() {
         <Heading fontSize="48px" color="black">
           Techtro Board
         </Heading>
-
         <Center>{/* <Board /> */}</Center>
       </Container>
+      <Timeline events={mockEvents} />
     </VStack>
   );
 }
