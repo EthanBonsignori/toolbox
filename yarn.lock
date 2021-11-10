@@ -1844,6 +1844,21 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/im-fell-dw-pica@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/im-fell-dw-pica/-/im-fell-dw-pica-4.5.0.tgz#eaebd6cb7d4d92b3d95d846b6f4da7d5142ff236"
+  integrity sha512-exuvZrc3HpV8JeEZ2PsHnjY7wXdo7lZhStukjzBFKDn8PjKpBGndsrSu2g+acT9sWH2oKUXapJPGRjDLA8BaNg==
+
+"@fontsource/im-fell-english-sc@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/im-fell-english-sc/-/im-fell-english-sc-4.5.0.tgz#d065ec30d12ddb728fbae38306df916deb067e63"
+  integrity sha512-cvlZcCqjMiiE4Iq/+1oqjmQAVYNT3COSZ0NYgzKXDYdvvPKc1ZgFJgRDHMZTqMdNOe+PcWX76UEFj9q3dqZxag==
+
+"@fontsource/pt-sans-narrow@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/pt-sans-narrow/-/pt-sans-narrow-4.5.0.tgz#f15169fcdb933ba89c36b6b624ed24cf0d045c88"
+  integrity sha512-X9Z2MH3bWd6CDPwa7nMfHHhy3Hz4lp77jXWs6YSUzFFl3WeJy4mHsZxNv5aa3BNHcwnOs0ouvo4AYBdUjDvrlA==
+
 "@hapi/address@2.x.x":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@hapi/address/-/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
