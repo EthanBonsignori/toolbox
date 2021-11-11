@@ -1,7 +1,11 @@
 import { extendTheme } from '@chakra-ui/react';
+import CardTheme from './Card.theme';
 
 const theme = {
   config: { initialColorMode: 'light', useSystemColorMode: false },
+  components: {
+    Card: CardTheme,
+  },
   fonts: {
     heading: 'IM Fell DW Pica',
     text: 'PT Sans Narrow',
