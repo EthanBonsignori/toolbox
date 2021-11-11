@@ -1,6 +1,8 @@
-import { Box, Flex, SimpleGrid, Text } from '@chakra-ui/layout';
+import { Flex, SimpleGrid, Text } from '@chakra-ui/layout';
+import { format } from 'date-fns';
 import React from 'react';
 import { humanReadableDateDiff } from '../utils/date.utils';
+import EventCard from './EventCard';
 
 const Timeline = ({ events }) => {
   console.log('🚀 ~ Timeline ~ events', events);
@@ -13,65 +15,33 @@ const Timeline = ({ events }) => {
           );
           return (
             <Flex key={event.id} w="33.3333%" borderBottom="4px solid black">
-              <Box
-                bg="white"
-                minH="180px"
-                borderRadius="4px"
-                boxShadow="2px 3px 11px rgba(42, 45, 67, 0.26)"
-                width="100%"
-                m="50px"
-                mb="10"
-              >
-                <Flex h="100%" flexDirection="row" flexWrap="wrap">
-                  <Flex
-                    w="100%"
-                    alignItems="flex-start"
-                    borderBottom="1px solid"
-                    borderColor="purple.bg"
-                  >
-                    <Box
-                      ml="10px"
-                      mt="10px"
-                      mb="10px"
-                      h="32px"
-                      maxH="32px"
-                      w="32px"
-                      border="1px solid"
-                      borderRadius="100%"
-                      borderColor="black"
-                    />
-                    <Text
-                      pt="1px"
-                      mt="10px"
-                      marginLeft="4px"
-                      fontSize="1.2rem"
-                      fontFamily="IM Fell English SC"
-                    >
-                      {event.createdBy.toLocaleLowerCase()}
-                    </Text>
-                  </Flex>
-                  <Text m="10px" h="80%" color="purple.secondary">
-                    {event.title}
-                  </Text>
-                </Flex>
-              </Box>
+              <EventCard event={event} />
               <Flex
                 position="absolute"
-                bottom={-8}
+                bottom={-10}
                 width="33.333%"
                 height="20px"
+                m="0px 50px"
                 justifyContent="center"
                 flexDirection="column"
                 color="text.main"
                 fontStyle="italic"
               >
-                <Text fontFamily="IM Fell DW Pica" fontSize="18px">
-                  {/* {format(new Date(event.createdAt), 'eeee, MMM Lo')} */}
+                <Text
+                  fontFamily="IM Fell DW Pica"
+                  fontSize="28px"
+                  lineHeight="0.9"
+                >
+                  {format(new Date(event.createdAt), 'eeee, MMM Lo')}
                 </Text>
-                <Flex>
-                  <Text fontWeight="bold">{firstDiff}</Text>
+                <Flex opacity="75%">
+                  <Text fontWeight="bold" fontStyle="normal">
+                    {firstDiff}
+                  </Text>
                   &nbsp;&amp;&nbsp;
-                  <Text fontWeight="bold">{secondDiff}</Text>
+                  <Text fontWeight="bold" fontStyle="normal">
+                    {secondDiff}
+                  </Text>
                   &nbsp;ago
                 </Flex>
               </Flex>
