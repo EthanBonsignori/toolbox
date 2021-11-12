@@ -2,7 +2,8 @@ import { Center, Container, Heading, VStack } from '@chakra-ui/layout';
 import React from 'react';
 import Navbar from './components/Navbar';
 import Timeline from './components/Timeline';
-import mockEvents from './utils/mock_data.json';
+import './App.css'
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
         </Heading>
         <Center>{/* <Board /> */}</Center>
       </Container>
-      <Timeline events={mockEvents} />
+      <Timeline events={[]} />
     </VStack>
   );
 }
