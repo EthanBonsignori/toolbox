@@ -7,7 +7,9 @@
     "dev": "craco start",
     "eject": "react-scripts eject",
     "start": "craco start",
-    "test": "craco test"
+    "test": "craco test",
+    "clean": "rm -rf node_modules",
+    "clean-pshell": "rm -r node_modules"
   },
   "browserslist": {
     "production": [
@@ -26,11 +28,9 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^1.0.0",
+    "@craco/craco": "^6.4.0",
     "@emotion/react": "^11.0.0",
     "@emotion/styled": "^11.0.0",
-    "@fontsource/im-fell-dw-pica": "^4.5.0",
-    "@fontsource/im-fell-english-sc": "^4.5.0",
-    "@fontsource/pt-sans-narrow": "^4.5.0",
     "@testing-library/jest-dom": "^5.9.0",
     "@testing-library/react": "^10.2.1",
     "@testing-library/user-event": "^12.0.2",
