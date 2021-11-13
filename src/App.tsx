@@ -1,13 +1,13 @@
-import { Center, Container, Heading, VStack } from '@chakra-ui/layout';
 import React from 'react';
-import Navbar from './components/Navbar';
-import Timeline from './components/Timeline';
-import './styles/base.css'
-
+import './styles/base.css';
 
 function App() {
   return (
-    <div>Hello World</div>
+    <main className="h-screen w-screen flex justify-center items-center">
+      <div className="w-full ">
+        <h1 className="font-display italic text-display">Hello Worl</h1>
+      </div>
+    </main>
   );
 }
 
