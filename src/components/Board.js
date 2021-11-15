@@ -4,7 +4,7 @@ import React from 'react';
 import { CARD_HEIGHT, CARD_WIDTH } from '../utils/constants';
 
 function Board() {
-  const bg = useColorModeValue('gray.100', 'aw');
+  const bg = useColorModeValue('gray.100', 'purple.main');
   const color = useColorModeValue('gray.300', '#111');
   const textShadow = useColorModeValue(
     '0px -1px 0px rgba(0,0,0,.7), 0px 1px 0px rgba(255,255,255,.3)',

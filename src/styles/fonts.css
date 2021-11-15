@@ -51,10 +51,10 @@
 /* pt-sans-narrow-latin-700-normal*/
 @font-face {
   font-family: 'PT Sans Narrow';
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
   font-weight: 700;
-  src: local('PT Sans Narrow'), local('pt-sans-narrow'),
+  src: local('PT Sans Narrow Bold'), local('pt-sans-narrow-bold'),
     url('../fonts/pt-sans-narrow/700-normal.woff2') format('woff2'),
     url('../fonts/pt-sans-narrow/700-normal.woff') format('woff');
 }

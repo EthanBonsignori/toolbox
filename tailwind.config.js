@@ -1,8 +1,6 @@
-const colors = require('tailwindcss/colors');
-
 module.exports = {
   mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  purge: ['./src/*.{ts,tsx}', './src/**/*.{js,jsx,ts,tsx}', './public/*.html'],
   darkMode: false,
   theme: {
     fontFamily: {
@@ -10,8 +8,10 @@ module.exports = {
       displayCaps: ['"IM Fell English SC"', 'serif'],
       body: ['"PT Sans Narrow"', 'sans-serif'],
     },
-    colors: {
-      display: colors.violet['500'],
+    extend: {
+      colors: {
+        display: '#8b5cf6',
+      },
     },
   },
   variants: {

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "craco build",
-    "dev": "craco start",
+    "dev": "TAILWIND_MODE=watch NODE_ENV=development craco start",
     "eject": "react-scripts eject",
     "start": "craco start",
     "test": "craco test",

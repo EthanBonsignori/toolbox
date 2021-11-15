@@ -4,4 +4,17 @@
 
 @layer base {
   @import 'fonts.css';
+  @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+}
+
+@layer utilities {
+  .absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+  .absolute-center-x {
+    @apply absolute left-1/2 transform -translate-x-1/2;
+  }
+  .absolute-center-y {
+    @apply absolute top-1/2 transform -translate-y-1/2;
+  }
 }
